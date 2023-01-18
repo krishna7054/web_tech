@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: lightblue;
+    position: fixed;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+
+
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: blue;
+
+}
+
+nav li:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+
+/* section */
+.left{
+   display: inline-block;
+   width: 50%;
+   background-color: lightgreen;
+   height: 800px;
+}
+.right {
+    display: inline-block;
+    width: 50%;
+    background-color: lightcoral;
+    height: 800px;
+}
+
+/* footer  */
+.footer{
+   margin-top: -10px;
+   width: 100%;
+       background-color: rgb(135, 128, 240);
+       height: 50px;
+       text-align: center;
+       padding-top: 20px;
+}
+
+
+
+
+
+/* The dropdown container */ */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+    background-color: red;
+} 
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
