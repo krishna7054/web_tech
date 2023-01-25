@@ -1,0 +1,43 @@
+
+<head>
+  
+    <style>
+    h1{display:inline-block;}
+    </style>
+</head>
+
+<body>
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+    <Button onclick="window.location.href = './task2.html'">Task 2</Button>
+    <Button onclick="window.location.href = './task3.html'">Task 3</Button>
+    <Button onclick="window.location.href = './task4.html'">Task 4</Button>
+    <Button onclick="window.location.href = './task5.html'">Task 5</Button>
+    <Button onclick="window.location.href = './task6.html'">Task 6</Button>
+    <h1>Namskar Dosto</h1>
+    <button > Use Me (e)</button>
+    <br>
+    <button onclick="changebgcolor()">Use Me(a)</button>
+    <button onclick="changeTextColor()"> Use Me(b)</button>
+    <button onclick="changeFontSize()"> Use Me(c)</button>
+    <button onclick="changeInside()"> Use Me(d)</button>
+    <script type="text/javascript">
+        changebgcolor = function () {
+            document.body.style.backgroundColor = 'rgb(124,252,0)'
+        }
+
+        changeFontSize = function(){
+            var heading = document.body.querySelector('h1');
+            heading.style.fontSize= '48px';
+        }
+        changeTextColor = function () {
+                var heading = document.body.querySelector('h1');
+                heading.style.color='red';
+            }
+        changeInside = function () {
+                var heading = document.body.querySelector('h1');
+                heading.innerHTML = 'Heading changed';
+            }
+    </script>
+</body>
+
+</html>
