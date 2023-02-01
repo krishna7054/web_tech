@@ -1,0 +1,30 @@
+
+<html>
+
+  <body>
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+    <Button onclick="window.location.href = './task2.html'">Task 2</Button>
+    <Button onclick="window.location.href = './task3.html'">Task 3</Button>
+    <Button onclick="window.location.href = './task4.html'">Task 4</Button>
+    <Button onclick="window.location.href = './task5.html'">Task 5</Button>
+    <Button onclick="window.location.href = './task6.html'">Task 6</Button>
+    <div>
+        <button id="button" onclick="cc()">PressToIncrese</button>
+        <p id="count">Hello</p>
+      </div>
+      <script>
+      const button = document.querySelector('#button');
+      const count = document.querySelector('#count');
+      
+      let countValue = 0;
+      
+
+        cc= function(){
+        countValue++;
+        count.textContent = 'Hello' ;
+        count.style.fontSize = 20 + countValue + 'px';
+      };
+    </script>
+      
+  </body>
+</html>

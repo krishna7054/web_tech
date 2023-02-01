@@ -1,0 +1,31 @@
+<html>
+    <body>
+      <Button onclick="window.location.href = './index.html'">Task 1</Button>
+      <Button onclick="window.location.href = './task2.html'">Task 2</Button>
+      <Button onclick="window.location.href = './task3.html'">Task 3</Button>
+      <Button onclick="window.location.href = './task4.html'">Task 4</Button>
+      <Button onclick="window.location.href = './task5.html'">Task 5</Button>
+      <Button onclick="window.location.href = './task6.html'">Task 6</Button>
+    <div>
+        <button id="button" onclick="ald()">Increment</button>
+        <ul id="list"></ul>
+      </div>
+      <script>
+        const button = document.querySelector('#button');
+const list = document.querySelector('#list');
+
+let countValue = 0;
+
+
+    ald=function(){
+  countValue++;
+  const listItem = document.createElement('li');
+  listItem.textContent = countValue;
+  listItem.style.fontSize = 20 + countValue + 'px';
+  list.appendChild(listItem);
+};
+
+      </script>
+       </body>
+      
+</html>

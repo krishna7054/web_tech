@@ -1,0 +1,49 @@
+
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 30%;
+    }
+
+    td {
+      border: 1px solid rgb(194, 11, 11);
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <Button onclick="window.location.href = './index.html'">Task 1</Button>
+  <Button onclick="window.location.href = './task2.html'">Task 2</Button>
+  <Button onclick="window.location.href = './task3.html'">Task 3</Button>
+  <Button onclick="window.location.href = './task4.html'">Task 4</Button>
+  <Button onclick="window.location.href = './task5.html'">Task 5</Button>
+  <Button onclick="window.location.href = './task6.html'">Task 6</Button>
+  <button id="addRow" onclick="fib()">Add Row</button>
+  <table id="fibonacciTable">
+    <tr>
+      <td>1</td>
+    </tr>
+  </table>
+
+  <script>
+    const button = document.querySelector("#addRow");
+    const table = document.querySelector("#fibonacciTable");
+    let prev = 0;
+    let curr = 1;
+
+   fib= function() {
+      const next = prev + curr;
+      prev = curr;
+      curr = next;
+
+      const newRow = table.insertRow(-1);
+      const newCell = newRow.insertCell(0);
+      newCell.innerText = next;
+    };
+  </script>
+</body>
+</html>

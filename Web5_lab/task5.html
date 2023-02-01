@@ -1,0 +1,55 @@
+
+<html>
+  <body>
+    <Button onclick="window.location.href = './index.html'">Task 1</Button>
+    <Button onclick="window.location.href = './task2.html'">Task 2</Button>
+    <Button onclick="window.location.href = './task3.html'">Task 3</Button>
+    <Button onclick="window.location.href = './task4.html'">Task 4</Button>
+    <Button onclick="window.location.href = './task5.html'">Task 5</Button>
+    <Button onclick="window.location.href = './task6.html'">Task 6</Button>
+    <input type="text" id="in1">
+    <input type="text" id="in2">
+    <br><br>
+    <button id="add" onclick="add()">+</button>
+    <button id="subtract" onclick="sub()">-</button>
+    <button id="multiply" onclick="multi()">*</button>
+    <button id="divide" onclick="divi()">/</button>
+    <br><br>
+    <p id="result"></p>
+
+    <script>
+      const input1 = document.querySelector('#in1');
+      const input2 = document.querySelector('#in2');
+      const addButton = document.querySelector('#add');
+      const subtractButton = document.querySelector('#subtract');
+      const multiplyButton = document.querySelector('#multiply');
+      const divideButton = document.querySelector('#divide');
+      const result = document.querySelector('#result');
+
+     
+        add= function(){
+        const value1 = Number.parseInt(input1.value);
+        const value2 = Number.parseInt(input2.value);
+        result.innerText = value1 + value2;
+      };
+
+      sub= function() {
+        const value1 = Number.parseInt(input1.value);
+        const value2 = Number.parseInt(input2.value);
+        result.innerText = value1 - value2;
+      };
+
+      multi= function() {
+        const value1 = Number.parseInt(input1.value);
+        const value2 = Number.parseInt(input2.value);
+        result.innerText = value1 * value2;
+      };
+
+      divi= function() {
+        const value1 = Number.parseInt(input1.value);
+        const value2 = Number.parseInt(input2.value);
+        result.innerText = value1 / value2;
+      };
+    </script>
+  </body>
+</html>
